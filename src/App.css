@@ -1,38 +1,329 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Poppins", sans-serif;
+font-size: 18px;
+font-weight: 200;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  background-color: inherit;
+  color: black;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  z-index: 1;
+}
+
+.header-logo, .header-sections {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.header-logo {
+  flex: 2;
+  padding-left: 3%;
+  height: 100%;
+}
+
+.header-sections {
+  flex: 3;
+}
+
+.header-sections-flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.flex-li {
+  font-family: Open Sans;
+  text-align: left;
+  padding: 0 10px;
+  color: #1F1F1F;
+  border-right: 1px solid rgb(255, 108, 108);
+  transition: all ease-out 0.2s, transition ease-out 0.2s;
+}
+
+
+
+.flex-li:hover {
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+.carbon-logo {
+  width: auto;
+  height: 80%;
+}
+
+.background {
+  height: 100vh;
+  background-image: url('./images/selimsarı.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Banner Start */
+.banner-flex{
+
+  display: flex;
+  width: 99%;
+  margin: auto;
+  height: 100vh;
+}
+
+.banner-text, .banner-image{
+  flex: 1;
+  margin-top: 11vh;
+}
+
+.image-container{
+  width: 85%;
+  
+  height: 100%;
+}
+
+.banner-img{
+  width: 100%;
+  height: 100%;
+  justify-items: cover;
+  
+}
+.banner-text{
+  margin: auto;
+
+}
+.banner-h2{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: regular;
+  font-size: 100px;
+  width: 80%;
+  
+  margin: auto;
+  padding-top: 4%;
+  text-align: left;
+}
+
+.banner-p{
+width: 80%;
+font-family: "Poppins", sans-serif;
+font-size: 30px;
+font-weight: 200;
+margin: auto;
+}
+.banner-values{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 10%;
+  width: 100%;
+}
+
+.banner-values-li{
+  flex: 1;
+  width: 100%;
+  text-align: center;
+  border-right: 1px solid rgb(255, 108, 108);
+
+}
+
+.li-number{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 56px;
+  color: yellow;
+
+}
+
+.li-desc{
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+@media (max-width: 1080px){
+  .banner-h2{
+    font-size: 60px;
+  }
+  .banner-p{
+      font-size: 16px;
+  }
+  .banner-flex{
+    display: block;
+    padding-top: 25%;
+    width: 100%;
+  }
+  .banner-image{
+    display: none;
+
+  }
+  .image-container{
+    margin: auto;
+    
+  }
+  .banner-img{
+    width: 100%;
+    height: 60vh;
+  }
+  .li-number{
+    font-size: 46px;
+  
+  }
+  .background{
+    height: 150vh;
+  }
+  
+  .li-desc{
+    font-size: 14px;
+  }
+  h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: regular;
+    font-size: 60px;
+  }
+  p{
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  }
+}
+/* Banner End */
+
+/* Why me Start */
+.why-me{
+  background-color: #0a0a0a;
+  padding-top: 7%;
+}
+h2{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: regular;
+  font-size: 100px;
+}
+p{
+font-family: "Poppins", sans-serif;
+font-size: 18px;
+font-weight: 200;
+}
+.why-me-h2{
+  text-align: center;
+
+}
+
+.why-me-span{
+  color: yellow;
+}
+
+.why-me-p{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.why-me-grid{
+  padding-top: 10%;
+  display: grid;
+  width: 90%;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+  margin: auto;
+
+  
+}
+.why-me-grid-1{
+  margin-left: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 10%;
+  width: 70%;
+  border: 1px solid;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-color: yellow;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h3{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.why-me-h3{
+  color: yellow;
+}
+@media (max-width: 1080px){
+  .why-me-grid{
+    display: block;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+  .why-me h2{
+    font-size: 60px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Why me End */
+
+/* Hizmetler Start */
+.hizmetler{
+  background-color: #121212;
+  width: 97%;
+  padding-top: 5%;
+  text-align: left;
+  padding-left: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.App-link {
-  color: #61dafb;
+.hizmetler-left, .hizmetler-right{
+  padding-left: 15%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.hizmetler-li{
+  padding-bottom: 2%;
 }
+
+@media (max-width: 1080px) {
+  .hizmetler{
+    display: block;
+    padding-left: 0;
+    width: 100%;
+    
+  }
+  
+.hizmetler-left, .hizmetler-right{
+  padding-left: 3%;
+  padding-bottom: 10%;
+}
+
+
+.hizmetler-left h2, .hizmetler-right h2{
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: 5%;
+
+}
+
+.hizmetler-left p, .hizmetler-right p{
+  text-align: center;
+
+}
+}
+/* Hizmetler End */
