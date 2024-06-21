@@ -8,7 +8,7 @@ const Hizmetler = () => {
             ADRESLERİ</h2>
             <ul>
                 <li ><p className='hizmetler-li'>Telefon Et: <a href=''>0XXX xxx xxx</a></p></li>
-                <li ><p className='hizmetler-li'>WhatsApp: <a href=''>0XXX xxx xxx</a></p></li>
+                <li ><p className='hizmetler-li'>WhatsApp: <a href='"https://wa.me/+905066424651?text=Hello%20there!"'>0XXX xxx xxx</a></p></li>
                 <li ><p className='hizmetler-li'>Instagram:<a href=''> sariselim</a></p></li>
             </ul>
         </div>
