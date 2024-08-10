@@ -78,9 +78,11 @@ ul {
 
 .background {
   height: 100vh;
+
   background-image: url('./images/selimsarı.jpeg');
-  background-size: cover;
+  background-size: cover; 
   background-position: center;
+
 }
 
 /* Banner Start */
