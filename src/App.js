@@ -9,11 +9,13 @@ const App = () => {
   return (
     <>
     <div className='background'>
+    <div className='background-image'>
+      <div className='bgimg'></div>
+    </div>
     <Header />
     <Banner />
     <WhyMe />
     <Hizmetler />
-
     </div>
 
     </>
